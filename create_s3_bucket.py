@@ -24,7 +24,6 @@ def main():
     # Set up logging
     logging.basicConfig(level=logging.DEBUG,
                         format='%(levelname)s: %(asctime)s: %(message)s')
-    # Create AMIs for Instances
     bucket_status = create_bucket("awsboto3ibm")
     print(bucket_status)
 
