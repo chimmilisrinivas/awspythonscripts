@@ -14,15 +14,13 @@ def get_bucket_cors(bucket_name):
             return []
         else:
             # AllAccessDisabled error == bucket not found
-            logging.error(e)
             return None
     return response['CORSRules']
 
 
 def main():
     # Set up logging
-    logging.basicConfig(level=logging.DEBUG,
-                        format='%(levelname)s: %(asctime)s: %(message)s')
+    
     bucket_status = get_bucket_cors("awsboto3ibm")
     print(bucket_status)
 

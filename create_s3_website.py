@@ -4,7 +4,7 @@ website_configuration = {
     'IndexDocument': {'Suffix': 'index.html'},
 }
 
-# Set the website configuration
+# website configuration 
 s3 = boto3.client('s3')
 s3.put_bucket_website(Bucket='awsboto3ibm',
                       WebsiteConfiguration=website_configuration)

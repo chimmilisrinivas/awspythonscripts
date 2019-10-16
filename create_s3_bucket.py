@@ -24,7 +24,7 @@ def main():
     # Set up logging
     logging.basicConfig(level=logging.DEBUG,
                         format='%(levelname)s: %(asctime)s: %(message)s')
-    bucket_status = create_bucket("awsboto3ibm")
+    bucket_status = create_bucket("awsboto3ibm12")
     print(bucket_status)
 
 if __name__ == '__main__':
